@@ -2,10 +2,10 @@
   --bg: #f8f4f6;
   --surface: #fffdfb;
   --ink: #3d3540;
-  --ink-soft: #6b5e70;
-  --muted: #8a7d8e;
+  --ink-soft: #4a4050;
+  --muted: #5c5360;
   --line: #efe6ea;
-  --accent: #b08aaa;
+  --accent: #6d5470;
   --accent-soft: #f5eef2;
   --radius: 12px;
   --sans: "Assistant", "Heebo", system-ui, sans-serif;
@@ -605,4 +605,25 @@ body.lang-en #services,
 body.lang-en #accessibility {
   direction: ltr !important;
   text-align: left !important;
+}
+
+/* Stronger focus for interactive elements */
+.lang-toggle:focus-visible,
+a.lang-toggle:focus-visible,
+.a11y-fab:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #4a3d66 !important;
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }

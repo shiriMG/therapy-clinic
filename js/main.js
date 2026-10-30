@@ -62,6 +62,8 @@ const I18N = {
 function applyLang(lang) {
   const dict = I18N[lang] || I18N.he;
   document.documentElement.lang = lang === "en" ? "en" : "he";
+  const announce = document.getElementById("lang-announce");
+  if (announce) announce.textContent = lang === "en" ? "Language changed to English" : "השפה שונתה לעברית";
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
