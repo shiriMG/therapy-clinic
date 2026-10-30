@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>אודות — קליר</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Frank+Ruhl+Libre:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/logo-mark.jpg" alt="" />
+        <span class="brand-text">
+          <span class="brand-name">קליר</span>
+          <span class="brand-sub" data-i18n="brandSub">פסיכותרפיה</span>
+        </span>
+      </a>
+      <button class="menu-btn" aria-label="תפריט">☰</button>
+      <nav class="nav">
+        <a href="index.html" data-i18n="navHome">ראשי</a>
+        <a class="active" href="about.html" data-i18n="navAbout">אודות</a>
+        <a href="services.html" data-i18n="navServices">הטיפול</a>
+        <a href="contact.html" data-i18n="navContact">יצירת קשר</a>
+        <div class="lang">
+          <button type="button" data-lang="he" class="active">עב</button>
+          <button type="button" data-lang="fr">FR</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="kicker" data-i18n="aboutKicker">הקליניקה</p>
+        <h1 data-i18n="pageAboutTitle">אודות</h1>
+        <p class="lede" data-i18n="pageAboutLede">להציג את המטפלת, את ההכשרה ואת אופן העבודה.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <img src="images/therapist.jpg" alt="דיוקן — להחלפה בתמונה אמיתית" />
+        <div>
+          <h2 class="section-title" data-i18n="aboutTitle">נוכחות שקטה, תשומת לב אמיתית.</h2>
+          <p data-i18n="aboutP1">
+            זהו אתר לדוגמה לקליניקה לפסיכותרפיה. יש להחליף את השם, הדיוקן, ההכשרה והטקסט בפרטים האמיתיים של המטפלת.
+          </p>
+          <p data-i18n="aboutP2">
+            העיצוב נשאר במכוון מאופק: מעט קישוט, הרבה אוויר, וסגול עדין.
+          </p>
+          <div class="soft-panel" style="padding: 24px; margin-top: 24px;">
+            <ul class="list">
+              <li data-i18n="aboutCred1">הכשרה: להשלים (תואר, מוסד, שנה)</li>
+              <li data-i18n="aboutCred2">השתייכות / הדרכה: להשלים</li>
+              <li data-i18n="aboutCred3">קהל: מבוגרים — לדייק</li>
+              <li data-i18n="aboutCred4">שפות עבודה: לציין</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>קליר — <span data-i18n="brandSub">פסיכותרפיה</span></div>
+      <div data-i18n="footerNote">טיוטת אתר — להתאמה לפני פרסום. יש להוסיף הבהרות משפטיות לפי המדינה.</div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
