@@ -7,7 +7,7 @@
   --muted: #6e6b78;
   --line: #e4e1ea;
   --violet: #7a6aa3;
-  --violet-deep: #5f5188;
+  --violet-deep: #4a3d78;
   --violet-soft: #ece7f4;
   --violet-mist: #f4f0f8;
   --shadow: 0 18px 40px rgba(47, 40, 62, 0.07);
@@ -532,4 +532,13 @@ textarea:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { animation: none !important; transition: none !important; }
+}
+
+/* Single-page section spacing */
+section {
+  padding: 80px 0;
+  scroll-margin-top: 90px;
+}
+section.hero {
+  padding: 60px 0 80px;
 }

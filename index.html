@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>שירי מנשה גלילי — פסיכותרפיסטית</title>
-  <meta name="description" content="שירי מנשה גלילי — פסיכותרפיסטית (טיפול רגשי). מרחב הקשבה חסוי ומכבד." />
+  <meta name="description" content="שירי מנשה גלילי — פסיכותרפיסטית (טיפול רגשי). ליווי אימהות בהתמודדות עם עומס, סטרס ושחיקה. קליניקה ביתית בתל אביב ומפגשים אונליין." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Frank+Ruhl+Libre:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -12,106 +12,155 @@
 </head>
 <body>
   <a class="skip-link" href="#main">דלג לתוכן</a>
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="wrap header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="#top">
         <img class="brand-mark" src="images/logo-mark.jpg" alt="לוגו שירי מנשה גלילי" />
         <span class="brand-text">
           <span class="brand-name">שירי מנשה גלילי</span>
-          <span class="brand-sub" data-i18n="brandSub">פסיכותרפיסטית</span>
+          <span class="brand-sub">פסיכותרפיסטית</span>
         </span>
       </a>
       <button class="menu-btn" aria-label="פתח תפריט" aria-expanded="false">☰</button>
-      <nav class="nav">
-        <a class="active" href="index.html" aria-current="page" data-i18n="navHome">ראשי</a>
-        <a href="about.html" data-i18n="navAbout">אודות</a>
-        <a href="services.html" data-i18n="navServices">הטיפול</a>
-        <a href="contact.html" data-i18n="navContact">יצירת קשר</a>
-        <a href="accessibility.html">נגישות</a>
-        <div class="lang">
-          <button type="button" data-lang="he" class="active">עב</button>
-          <button type="button" data-lang="fr">FR</button>
-          <button type="button" data-lang="en">EN</button>
-        </div>
+      <nav class="nav" role="navigation" aria-label="תפריט ראשי">
+        <a href="#about">אודות</a>
+        <a href="#services">הטיפול</a>
+        <a href="#contact">יצירת קשר</a>
+        <a href="#accessibility">נגישות</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
+    <!-- Hero -->
+    <section id="top" class="hero">
       <div class="hero-bg"></div>
       <div class="wrap hero-grid">
         <div>
-          <p class="kicker" data-i18n="kicker">מרחב להקשבה</p>
-          <h1 data-i18n="heroTitle">מקום שקט להניח בו את מה שכבד.</h1>
-          <p class="lede" data-i18n="heroLede">
-            ליווי פסיכותרפי חסוי, מכבד וללא שיפוט — בקליניקה או בשיחת וידאו.
-          </p>
-          <div class="actions">
-            <a class="btn btn-primary" href="contact.html" data-i18n="ctaContact">לקביעת פגישה</a>
-            <a class="btn btn-ghost" href="services.html" data-i18n="ctaServices">איך נראה הטיפול</a>
+          <p class="kicker">מרחב להקשבה</p>
+          <h1>מקום שקט להניח בו את מה שכבד.</h1>
+          <p class="lede">ליווי פסיכותרפי חסוי, מכבד וללא שיפוט — בקליניקה או בשיחת וידאו.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">לקביעת פגישה</a>
+            <a class="btn btn-ghost" href="#services">איך נראה הטיפול</a>
           </div>
         </div>
-        <figure class="hero-card">
+        <figure class="hero-figure">
           <img src="images/cabinet.jpg" alt="חדר טיפול רגוע" />
-          <figcaption data-i18n="heroCaption">הקליניקה — מסגרת רגועה, דיסקרטית ומזמינה.</figcaption>
+          <figcaption>הקליניקה — מסגרת רגועה, דיסקרטית ומזמינה.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section>
-      <div class="wrap">
-        <p class="kicker" data-i18n="approachKicker">הגישה</p>
-        <h2 class="section-title" data-i18n="approachTitle">לעבוד בקצב שלכם, בתוך מסגרת בטוחה.</h2>
-        <p class="section-intro" data-i18n="approachIntro">
-          העבודה הטיפולית מתחילה בקשר. אין צורך להגיע מלוטשים. אפשר להגיע בדיוק כפי שאתם.
-        </p>
-        <div class="cards">
-          <article class="card">
-            <div class="icon-dot"></div>
-            <h3 data-i18n="card1Title">הקשבה</h3>
-            <p data-i18n="card1Text">מקום לשים מילים על מה שחוזר, על מה שכואב, או על מה שעדיין מעורפל.</p>
-          </article>
-          <article class="card">
-            <div class="icon-dot"></div>
-            <h3 data-i18n="card2Title">מסגרת ברורה</h3>
-            <p data-i18n="card2Text">סודיות, סדירות וגבולות שמכובדים. המסגרת מגינה גם על העבודה וגם על האדם.</p>
-          </article>
-          <article class="card">
-            <div class="icon-dot"></div>
-            <h3 data-i18n="card3Title">כיוונים אפשריים</h3>
-            <p data-i18n="card3Text">חרדה, מעברי חיים, זוגיות ומשפחה, דימוי עצמי, שחיקה, אבל — לפי מה שצריך עכשיו.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
+    <!-- About -->
+    <section id="about">
       <div class="wrap split">
         <img src="images/therapist.jpg" alt="שירי מנשה גלילי, פסיכותרפיסטית" />
         <div>
           <p class="kicker">הקליניקה</p>
           <h2 class="section-title">אני מלווה אימהות</h2>
-          <p>
-            אני מלווה אימהות המתמודדות עם עומס, סטרס ושחיקה, ומסייעת להן להפחית מתח, למצוא מחדש תחושת רוגע וליצור יותר איזון בחיי היומיום.
-          </p>
-          <p>
-            הטיפול משלב פסיכותרפיה עם כלים משלימים (הילינג אנרגטי ופרחי באך), בהתאם לצרכים האישיים.
-          </p>
+          <p>אני מלווה אימהות המתמודדות עם עומס, סטרס ושחיקה, ומסייעת להן להפחית מתח, למצוא מחדש תחושת רוגע וליצור יותר איזון בחיי היומיום.</p>
+          <p>הטיפול משלב פסיכותרפיה (טיפול רגשי) עם כלים משלימים, ובהם הילינג אנרגטי ופרחי באך, בהתאם לצרכים האישיים של כל מטופלת.</p>
+          <p>אימהות רבות רגילות להיות שם עבור כולם, אך מתקשות לפנות זמן ומקום לעצמן. הטיפול מציע מרחב בטוח לעצור, לנשום, לעבד תחושות אשמה, להתחבר לעצמך ולחזק את המשאבים הפנימיים.</p>
+          <p>המפגשים מתקיימים בקליניקה ביתית בתל אביב ובמפגשי אונליין.</p>
           <ul class="list">
-            <li>קליניקה ביתית בתל אביב</li>
+            <li>קליניקה ביתית — תל אביב</li>
             <li>מפגשים אונליין</li>
             <li>טלפון: <a href="tel:0526509360">052-650-9360</a> · <a href="mailto:shirush_m@hotmail.com">shirush_m@hotmail.com</a></li>
           </ul>
         </div>
       </div>
     </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="wrap">
+        <p class="kicker">הטיפול</p>
+        <h2 class="section-title">איך נראית העבודה</h2>
+        <p class="section-intro">ליווי אימהות בהתמודדות עם עומס, סטרס ושחיקה. הטיפול משלב פסיכותרפיה עם כלים משלימים.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="icon-dot"></div>
+            <h3>השיחה הראשונה</h3>
+            <p>מבהירים את הבקשה, את המסגרת, וגם אם אפשר לעבוד יחד.</p>
+          </article>
+          <article class="card">
+            <div class="icon-dot"></div>
+            <h3>המשך הטיפול</h3>
+            <p>מפגשים סדירים, לעיתים קרובות אחת לשבוע בהתחלה, ואחר כך לפי מה שהעבודה צריכה.</p>
+          </article>
+          <article class="card">
+            <div class="icon-dot"></div>
+            <h3>סיום</h3>
+            <p>מסיימים יחד, כשזה נכון — לא בחיפזון.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="wrap split">
+        <div>
+          <p class="kicker">יצירת קשר</p>
+          <h2 class="section-title">לכתוב כדי לקבוע פגישה ראשונה</h2>
+          <p class="section-intro">הודעה ראשונה מספיקה כדי להתחיל.</p>
+          <p class="meta"><strong>טלפון</strong> <a href="tel:0526509360">052-650-9360</a></p>
+          <p class="meta"><strong>דוא״ל</strong> <a href="mailto:shirush_m@hotmail.com">shirush_m@hotmail.com</a></p>
+          <p class="meta"><strong>כתובת</strong> קליניקה ביתית בתל אביב</p>
+          <p class="meta"><strong>שעות</strong> בתיאום מראש בלבד.</p>
+        </div>
+        <form class="form" action="#" method="post">
+          <label for="name">
+            <span>שם</span>
+            <input id="name" type="text" name="name" required aria-required="true" />
+          </label>
+          <label for="email">
+            <span>דוא״ל</span>
+            <input id="email" type="email" name="email" required aria-required="true" />
+          </label>
+          <label for="phone">
+            <span>טלפון (לא חובה)</span>
+            <input id="phone" type="tel" name="phone" />
+          </label>
+          <label for="message">
+            <span>הודעה</span>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">שליחה</button>
+          <p class="note">הטופס כרגע חזותי בלבד.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Accessibility -->
+    <section id="accessibility">
+      <div class="wrap" style="max-width: 760px;">
+        <p class="kicker">נגישות</p>
+        <h2 class="section-title">הצהרת נגישות</h2>
+        <p>אתר זה מופעל על ידי שירי מנשה גלילי. אנו רואים חשיבות רבה במתן שירות שוויוני ונגיש לכלל הציבור, כולל אנשים עם מוגבלות.</p>
+        <p>האתר עומד בדרישות תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), התשע״ג-2013, ובהנחיות WCAG 2.0 ברמה AA.</p>
+        <h3>התאמות שבוצעו</h3>
+        <ul>
+          <li>מבנה סמנטי תקין עם כותרות מדורגות</li>
+          <li>קישור דילוג לתוכן הראשי</li>
+          <li>ניווט מלא במקלדת</li>
+          <li>טקסט חלופי (alt) לכל התמונות</li>
+          <li>ניגודיות צבעים מספקת</li>
+          <li>תוויות מקושרות נכון בטפסים</li>
+          <li>תמיכה בהגדלת טקסט בדפדפן</li>
+          <li>כיבוד העדפת תנועה מופחתת</li>
+        </ul>
+        <p>אם נתקלתם בקושי בנגישות, אנא פנו אלינו: <a href="tel:0526509360">052-650-9360</a> או <a href="mailto:shirush_m@hotmail.com">shirush_m@hotmail.com</a>.</p>
+        <p><small>הצהרה זו עודכנה לאחרונה: אוקטובר 2026</small></p>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="wrap footer-grid">
-      <div>שירי מנשה גלילי — <span data-i18n="brandSub">פסיכותרפיסטית</span><br><a href="tel:0526509360">052-650-9360</a> · <a href="mailto:shirush_m@hotmail.com">shirush_m@hotmail.com</a></div>
-      <div><a href="accessibility.html">הצהרת נגישות</a></div>
+      <div>שירי מנשה גלילי — פסיכותרפיסטית<br><a href="tel:0526509360">052-650-9360</a> · <a href="mailto:shirush_m@hotmail.com">shirush_m@hotmail.com</a></div>
+      <div><a href="#accessibility">הצהרת נגישות</a></div>
     </div>
   </footer>
   <script src="js/main.js"></script>

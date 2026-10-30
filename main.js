@@ -258,7 +258,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".menu-btn");
   const nav = document.querySelector(".nav");
   if (toggle && nav) {
-    toggle.addEventListener("click", () => nav.classList.toggle("open"));
+    toggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "סגור תפריט" : "פתח תפריט");
+    });
   }
 
   const form = document.querySelector("form");
