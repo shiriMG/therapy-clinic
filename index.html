@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>קליר — פסיכותרפיה</title>
-  <meta name="description" content="קליניקה לפסיכותרפיה — מרחב הקשבה חסוי ומכבד." />
+  <title>שירי מנשה גלילי — פסיכותרפיסטית</title>
+  <meta name="description" content="שירי מנשה גלילי — פסיכותרפיסטית (טיפול רגשי). מרחב הקשבה חסוי ומכבד." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Frank+Ruhl+Libre:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">דלג לתוכן</a>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="index.html">
-        <img class="brand-mark" src="images/logo-mark.jpg" alt="" />
+        <img class="brand-mark" src="images/logo-mark.jpg" alt="לוגו שירי מנשה גלילי" />
         <span class="brand-text">
-          <span class="brand-name">קליר</span>
-          <span class="brand-sub" data-i18n="brandSub">פסיכותרפיה</span>
+          <span class="brand-name">שירי מנשה גלילי</span>
+          <span class="brand-sub" data-i18n="brandSub">פסיכותרפיסטית</span>
         </span>
       </a>
-      <button class="menu-btn" aria-label="תפריט">☰</button>
+      <button class="menu-btn" aria-label="פתח תפריט" aria-expanded="false">☰</button>
       <nav class="nav">
-        <a class="active" href="index.html" data-i18n="navHome">ראשי</a>
+        <a class="active" href="index.html" aria-current="page" data-i18n="navHome">ראשי</a>
         <a href="about.html" data-i18n="navAbout">אודות</a>
         <a href="services.html" data-i18n="navServices">הטיפול</a>
         <a href="contact.html" data-i18n="navContact">יצירת קשר</a>
+        <a href="accessibility.html">נגישות</a>
         <div class="lang">
           <button type="button" data-lang="he" class="active">עב</button>
           <button type="button" data-lang="fr">FR</button>
@@ -35,7 +37,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero">
       <div class="hero-bg"></div>
       <div class="wrap hero-grid">
@@ -86,21 +88,20 @@
 
     <section>
       <div class="wrap split">
-        <img src="images/therapist.jpg" alt="דיוקן המטפלת — להחלפה" />
+        <img src="images/therapist.jpg" alt="שירי מנשה גלילי, פסיכותרפיסטית" />
         <div>
-          <p class="kicker" data-i18n="aboutKicker">הקליניקה</p>
-          <h2 class="section-title" data-i18n="aboutTitle">נוכחות שקטה, תשומת לב אמיתית.</h2>
-          <p data-i18n="aboutP1">
-            זהו אתר לדוגמה לקליניקה לפסיכותרפיה. יש להחליף את השם, הדיוקן, ההכשרה והטקסט בפרטים האמיתיים של המטפלת.
+          <p class="kicker">הקליניקה</p>
+          <h2 class="section-title">אני מלווה אימהות</h2>
+          <p>
+            אני מלווה אימהות המתמודדות עם עומס, סטרס ושחיקה, ומסייעת להן להפחית מתח, למצוא מחדש תחושת רוגע וליצור יותר איזון בחיי היומיום.
           </p>
-          <p data-i18n="aboutP2">
-            העיצוב נשאר במכוון מאופק: מעט קישוט, הרבה אוויר, וסגול עדין.
+          <p>
+            הטיפול משלב פסיכותרפיה עם כלים משלימים (הילינג אנרגטי ופרחי באך), בהתאם לצרכים האישיים.
           </p>
           <ul class="list">
-            <li data-i18n="aboutLi1">טיפול פרטני למבוגרים</li>
-            <li data-i18n="aboutLi2">אפשרות למפגשים בזום</li>
-            <li data-i18n="aboutLi3">שיחה ראשונה להיכרות</li>
-            <li data-i18n="aboutLi4">שפות הטיפול: לציין (עברית, צרפתית, אנגלית…)</li>
+            <li>קליניקה ביתית בתל אביב</li>
+            <li>מפגשים אונליין</li>
+            <li>טלפון: <a href="tel:0526509360">052-650-9360</a> · <a href="mailto:shirush_m@hotmail.com">shirush_m@hotmail.com</a></li>
           </ul>
         </div>
       </div>
@@ -109,8 +110,8 @@
 
   <footer class="site-footer">
     <div class="wrap footer-grid">
-      <div>קליר — <span data-i18n="brandSub">פסיכותרפיה</span></div>
-      <div data-i18n="footerNote">טיוטת אתר — להתאמה לפני פרסום. יש להוסיף הבהרות משפטיות לפי המדינה.</div>
+      <div>שירי מנשה גלילי — <span data-i18n="brandSub">פסיכותרפיסטית</span><br><a href="tel:0526509360">052-650-9360</a> · <a href="mailto:shirush_m@hotmail.com">shirush_m@hotmail.com</a></div>
+      <div><a href="accessibility.html">הצהרת נגישות</a></div>
     </div>
   </footer>
   <script src="js/main.js"></script>

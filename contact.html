@@ -3,28 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>יצירת קשר — קליר</title>
+  <title>יצירת קשר — שירי גלילי</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Frank+Ruhl+Libre:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">דלג לתוכן</a>
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="index.html">
-        <img class="brand-mark" src="images/logo-mark.jpg" alt="" />
+        <img class="brand-mark" src="images/logo-mark.jpg" alt="לוגו שירי מנשה גלילי" />
         <span class="brand-text">
-          <span class="brand-name">קליר</span>
-          <span class="brand-sub" data-i18n="brandSub">פסיכותרפיה</span>
+          <span class="brand-name">שירי מנשה גלילי</span>
+          <span class="brand-sub" data-i18n="brandSub">פסיכותרפיסטית</span>
         </span>
       </a>
-      <button class="menu-btn" aria-label="תפריט">☰</button>
+      <button class="menu-btn" aria-label="פתח תפריט" aria-expanded="false">☰</button>
       <nav class="nav">
         <a href="index.html" data-i18n="navHome">ראשי</a>
         <a href="about.html" data-i18n="navAbout">אודות</a>
         <a href="services.html" data-i18n="navServices">הטיפול</a>
-        <a class="active" href="contact.html" data-i18n="navContact">יצירת קשר</a>
+        <a class="active" href="contact.html" aria-current="page" data-i18n="navContact">יצירת קשר</a>
         <div class="lang">
           <button type="button" data-lang="he" class="active">עב</button>
           <button type="button" data-lang="fr">FR</button>
@@ -34,7 +35,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="page-hero">
       <div class="wrap">
         <p class="kicker" data-i18n="contactKicker">יצירת קשר</p>
@@ -50,25 +51,27 @@
           <p class="section-intro" data-i18n="contactIntro">
             הטופס כרגע חזותי בלבד. אחר כך מחברים אותו לשירות דוא״ל (Formspree, Netlify Forms וכו׳).
           </p>
-          <p class="meta"><strong data-i18n="contactMeta1">כתובת</strong> <span data-i18n="contactMeta1v">להשלים — עיר, שכונה, נגישות.</span></p>
+          <p class="meta"><strong>טלפון</strong> <a href="tel:0526509360">052-650-9360</a></p>
+          <p class="meta"><strong>דוא״ל</strong> <a href="mailto:shirush_m@hotmail.com">shirush_m@hotmail.com</a></p>
+          <p class="meta"><strong data-i18n="contactMeta1">כתובת</strong> <span data-i18n="contactMeta1v">קליניקה ביתית בתל אביב</span></p>
           <p class="meta"><strong data-i18n="contactMeta2">שעות</strong> <span data-i18n="contactMeta2v">בתיאום מראש בלבד.</span></p>
         </div>
         <form class="form" action="#" method="post">
-          <label>
+          <label for="name">
             <span data-i18n="labelName">שם</span>
-            <input type="text" name="name" required />
+            <input id="name" type="text" name="name" required aria-required="true" />
           </label>
-          <label>
+          <label for="email">
             <span data-i18n="labelEmail">דוא״ל</span>
-            <input type="email" name="email" required />
+            <input id="email" type="email" name="email" required aria-required="true" />
           </label>
-          <label>
+          <label for="phone">
             <span data-i18n="labelPhone">טלפון (לא חובה)</span>
-            <input type="tel" name="phone" />
+            <input id="phone" type="tel" name="phone" />
           </label>
-          <label>
+          <label for="message">
             <span data-i18n="labelMsg">הודעה</span>
-            <textarea name="message" required></textarea>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
           </label>
           <button class="btn btn-primary" type="submit" data-i18n="send">שליחה</button>
           <p class="note" data-i18n="formNote">כרגע לא נשלח דבר. זוהי טיוטה.</p>
@@ -79,8 +82,8 @@
 
   <footer class="site-footer">
     <div class="wrap footer-grid">
-      <div>קליר — <span data-i18n="brandSub">פסיכותרפיה</span></div>
-      <div data-i18n="footerNote">טיוטת אתר — להתאמה לפני פרסום. יש להוסיף הבהרות משפטיות לפי המדינה.</div>
+      <div>שירי מנשה גלילי — <span data-i18n="brandSub">פסיכותרפיסטית</span><br><a href="tel:0526509360">052-650-9360</a> · <a href="mailto:shirush_m@hotmail.com">shirush_m@hotmail.com</a></div>
+      <div><a href="accessibility.html">הצהרת נגישות</a></div>
     </div>
   </footer>
   <script src="js/main.js"></script>
